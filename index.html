@@ -10,39 +10,90 @@
     <script src="https://kit.fontawesome.com/eb22379432.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section id="app">
-        <div class="container">
-            <nav>
-                <figure>
-                    <img class="logo" src="./assets/White-petadoptlogo.png" alt="">
-                </figure>
-                <ul class="nav__links">
-                    <li>
-                        <a href="#" class="nav__link link__hover-effect">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav__link link__hover-effect">Find your fur-fam</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav__link btn">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="content__wrapper">
-                <h1>Adoptable Pets</h1>
-                <div class="input__wrap">
-                    <input type="text" placeholder="Search by Breed, Age, or Keyword">
-                    <div class="search__icon">
-                        <i class="fas fa-paw"></i>
+    <main>
+        <section id="header">
+            <div class="nav__container">
+                <nav class="content__wrapper">
+                    <figure>
+                        <img class="logo" src="./assets/White-petadoptlogo.png" alt="">
+                    </figure>
+                    <ul class="nav__links">
+                        <li>
+                            <a href="#" class="nav__link link__hover-effect">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link link__hover-effect">Find your fur-fam</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link btn">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="location__wrapper">
+                    <h1>Adoptable Pets</h1>
+                    <div class="input__wrap">
+                        <input type="text" placeholder="Search by zipcode or anywhere">
+                        <div class="search__icon">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+                <div class="navbar__load"></div>
+            </div>
+        </section>
+
+        <section id="search">
+            <div class="loading-bar">
+                <div class="loading-bar-track"></div>
+                <div class="loading-bar-fill"></div>
+                <div class="loading-bar-buffer"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="content__wrapper search__wrapper">
+                        <h1 class="search__info">
+                            <span>Search results:</span>
+                        </h1>
+                        <div class="pets__filter">
+                            <select name="filter" id="filter">
+                                <option value disabled selected>Filter</option>
+                                <option value="Dogs">Dogs</option>
+                                <option value="Cats">Cats</option>
+                                <option value="Addition-New_Old">Addition: NEW to OLD</option>
+                                <option value="Addition-Old_New">Addition: OLD to NEW</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="pets">
+                        <div class="content__wrapper pets__wrapper">
+                            <div class="loading__state"></div>
+                            <div class="pet">
+                                <figure>
+                                    <img class="pet__img" src="./assets/Sun&Moon.jpg" alt="">
+                                </figure>
+                                <h2 class="pet__name">Pet Name</h2>
+                                <div class="pet__info">
+                                    <p class="pet__age">age</p>
+                                    <p class="pet__breed">breed</p>
+                                    <p class="pet__distance">distance</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="overlay"></div>
-            <div class="navbar__load"></div>
-        </div>
-    </section>
-    <section id="search">
-        
-    </section>
+        </section>
+
+        <section>
+            <footer>
+                <div class="container footer__container">
+                    <div class="row footer__row">
+
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
 </body>
 </html>
